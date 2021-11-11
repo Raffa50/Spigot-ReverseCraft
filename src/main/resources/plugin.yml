@@ -1,0 +1,35 @@
+name: ReverseCraft
+main: net.sf.aldrigo.reverseCraft.ReverseCraft
+version: 0.1.0
+author: Aldrigo Raffaele
+api-version: 1.17
+commands:
+  rvcraft:
+    description: get ingredients for item in hands.
+    permission: rvcraft.rvcraft
+    usage: /rvcraft
+  rvcforbid:
+    description: forbid a reverse craft
+    permission: rvcraft.admin
+    usage: /rvcforbid <Material>
+  rvcallow:
+    description: allow a reverse craft that was forbidden
+    permission: rvcraft.admin
+    usage: /rvcallow <Material>
+  rvcforbidden:
+    description: list forbidden materials
+    permission: rvcraft.rvcforbidden
+    usage: /rvcforbidden
+
+permissions:
+  rvcraft.*:
+    default: op
+    children:
+      rvcraft.rvcraft: true
+      rvcraft.admin: true
+  rvcraft.rvcraft:
+    default: true
+  rvcraft.admin:
+    default: op
+    children:
+      rvcraft.rvcforbidden: true
