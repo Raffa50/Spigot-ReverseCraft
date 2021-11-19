@@ -25,7 +25,7 @@ public class ReverseCraft extends JavaPlugin {
             NotInvertible.add(Material.values()[e]);
         }
 
-        this.getLogger().info("[ReverseCraft] v0.1.0 by Aldrigo R. ENABLED!");
+        this.getLogger().info("[ReverseCraft] v0.1.1 by Aldrigo R. ENABLED!");
 
         getCommand("rvcraft").setExecutor(new RvCommand());
         getCommand("rvcforbid").setExecutor(new RvForbidCommand());

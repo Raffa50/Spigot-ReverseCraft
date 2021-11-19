@@ -1,6 +1,6 @@
 name: ReverseCraft
 main: net.sf.aldrigo.reverseCraft.ReverseCraft
-version: 0.1.0
+version: 0.1.1
 author: Aldrigo Raffaele
 api-version: 1.17
 commands:
